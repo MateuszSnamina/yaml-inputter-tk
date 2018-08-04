@@ -1,0 +1,7 @@
+method: 2
+energy: 5.6
+segments:
+  - pA: {x: 1, y: 5}
+    pB: {x: 1, y: 6}
+  - pA: {x: , y: 5} # OOps, missing value!
+    pB: {x: 2, y: 6}

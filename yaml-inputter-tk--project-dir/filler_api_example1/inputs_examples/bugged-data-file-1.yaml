@@ -1,0 +1,8 @@
+method: 2
+energy: 5.6
+segments1: # OOps, The segment should be in the segments node!
+  pA: {x: 1, y: 5}
+  pB: {x: 1, y: 6}
+segments2: # OOps, The segment should be in the segments node!
+  pA: {x: 2, y: 5}
+  pB: {x: 2, y: 6} 

@@ -1,0 +1,8 @@
+method: 2
+energy: 5.6
+segments: # OOps, the 'segments' node should be a list of segments!
+  p1A: {x: 1, y: 5}
+  p1B: {x: 1, y: 6}
+  p2A: {x: 2, y: 5}
+  p2B: {x: 2, y: 6}
+

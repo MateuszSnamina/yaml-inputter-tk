@@ -1,0 +1,20 @@
+- name: InputData
+  enums:
+    - cpp-name: Theory
+      cpp-values: [SINGLE_POINT, OPTIMIZATION]
+  classes:
+    - name: Segment
+      classes: 
+        - name: Point
+          fields:
+           - {cpp-name: x, cpp-type: Length, fill-strategy: required-scalar, input-key: "x"}
+           - {cpp-name: y, cpp-type: Length, fill-strategy: required-scalar, input-key: "y"}
+      fields:
+        - {cpp-name: pA, cpp-type: Point, fill-strategy: delegated, input-key: "pA"}
+        - {cpp-name: pB, cpp-type: Point, fill-strategy: delegated, input-key: "pB"}
+  fields:
+    - {cpp-name: E, cpp-type: double, cpp-init: "{5.7}", fill-strategy: required-scalar, input-key: "energy"}
+    - {cpp-name: theory, cpp-type: Theory, cpp-init: "{OPTIMIZATION}", fill-strategy: optional-scalar}
+    - {cpp-name: rs, cpp-type: 'std::vector<Segment>', container: required-sequence, fill-strategy: delegated, input-key: "segments"}
+    - {cpp-name: os, cpp-type: 'std::vector<Segment>', container: optional-sequence, fill-strategy: delegated, input-key: "optional-segments"}
+    - {cpp-name: fi, cpp-type: 'std::vector<int>', container: fixed-size-sequence, sequence-size: 3, fill-strategy: required-scalar, input-key: "fixed-ints"}

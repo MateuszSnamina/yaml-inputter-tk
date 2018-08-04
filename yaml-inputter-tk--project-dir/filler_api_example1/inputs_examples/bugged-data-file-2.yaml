@@ -1,0 +1,7 @@
+method: 2
+energy: 5.6
+segments:
+  - pA: {x: 1, y: 5}
+    pB: [ 1, 6 ] # OOps, pB should be a map node!
+  - pA: {x: 2, y: 5}
+    pB: {x: 2, y: 6}

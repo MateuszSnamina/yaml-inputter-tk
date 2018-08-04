@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="filler_api_example1">
+        <df name="src">
+          <in>main.cpp</in>
+        </df>
+      </df>
+      <df name="filler_api_example2">
+        <df name="src">
+          <in>main.cpp</in>
+        </df>
+      </df>
+      <df name="tk_example">
+        <df name="src">
+          <in>main.cpp</in>
+        </df>
+      </df>
+      <df name="yaml_inputter">
+        <df name="gtests">
+          <in>templated_filler__check_stray_fields.cpp</in>
+          <in>templated_filler__fill_optional.cpp</in>
+          <in>templated_filler__fill_optional_scalar.cpp</in>
+          <in>templated_filler__fill_required.cpp</in>
+          <in>templated_filler__fill_required_scalar.cpp</in>
+          <in>templated_filler__optional_sequence_size.cpp</in>
+          <in>templated_filler__required_sequence_size.cpp</in>
+          <in>test_cases_inputs.cpp</in>
+        </df>
+      </df>
+      <df name="yaml_inputter_code_generator">
+        <df name="src">
+          <df name="classes_kit">
+            <in>check_stray_fields.cpp</in>
+            <in>classes_dfs.cpp</in>
+            <in>container_type.cpp</in>
+            <in>container_type_yaml_converter.cpp</in>
+            <in>enum.cpp</in>
+            <in>field.cpp</in>
+            <in>fill_strategy.cpp</in>
+            <in>fill_strategy_yaml_converter.cpp</in>
+            <in>make_class.cpp</in>
+            <in>make_enum.cpp</in>
+            <in>make_field.cpp</in>
+            <in>read_classes.cpp</in>
+            <in>read_enums.cpp</in>
+            <in>read_fields.cpp</in>
+          </df>
+          <df name="emit_kit">
+            <in>emit_classes_definitions_file_content.cpp</in>
+            <in>emit_fill_functions_definitions_file_content.cpp</in>
+            <in>emit_leaflet.cpp</in>
+            <in>emit_overriding_warning.cpp</in>
+            <in>emitting_namespace_guard.cpp</in>
+            <in>emitting_preprocessor_if_guard.cpp</in>
+            <in>writer_classes_definitions.cpp</in>
+            <in>writer_fill_functions_definitions.cpp</in>
+            <in>writer_leaflet.cpp</in>
+          </df>
+          <df name="writer_kit">
+            <in>writer.cpp</in>
+          </df>
+          <in>ansi_escape_code.cpp</in>
+          <in>concatenate_vectors.cpp</in>
+          <in>join.cpp</in>
+          <in>main.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>build/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject|build)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11 -Wpedantic"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>build</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>build/yaml_inputter_tester/yaml_inputter_tester</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>build</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..</preBuildCommand>
+          <preBuildFirst>true</preBuildFirst>
+        </preBuild>
+      </makefileType>
+      <folder path="0/filler_api_example1">
+        <ccTool>
+          <incDir>
+            <pElem>filler_api_example1/include</pElem>
+            <pElem>yaml_inputter/include</pElem>
+            <pElem>build/filler_api_example1</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/filler_api_example2">
+        <ccTool>
+          <incDir>
+            <pElem>filler_api_example2/include</pElem>
+            <pElem>yaml_inputter/include</pElem>
+            <pElem>build/filler_api_example2</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/tk_example">
+        <ccTool>
+          <incDir>
+            <pElem>tk_example/include</pElem>
+            <pElem>yaml_inputter/include</pElem>
+            <pElem>build/tk_example</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/yaml_inputter">
+        <ccTool>
+          <incDir>
+            <pElem>yaml_inputter/include</pElem>
+            <pElem>build/yaml_inputter</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/yaml_inputter_code_generator">
+        <ccTool>
+          <incDir>
+            <pElem>yaml_inputter_code_generator/include</pElem>
+            <pElem>build/yaml_inputter_code_generator</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="filler_api_example1/src/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="filler_api_example2/src/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="tk_example/src/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__check_stray_fields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__fill_optional.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__fill_optional_scalar.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__fill_required.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__fill_required_scalar.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__optional_sequence_size.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/templated_filler__required_sequence_size.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter/gtests/test_cases_inputs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/ansi_escape_code.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/check_stray_fields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/classes_dfs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/container_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/container_type_yaml_converter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/enum.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/field.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/fill_strategy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/fill_strategy_yaml_converter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/make_class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/make_enum.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/make_field.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/read_classes.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/read_enums.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/classes_kit/read_fields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/concatenate_vectors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emit_classes_definitions_file_content.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emit_fill_functions_definitions_file_content.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emit_leaflet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emit_overriding_warning.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emitting_namespace_guard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/emitting_preprocessor_if_guard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/writer_classes_definitions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/writer_fill_functions_definitions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/emit_kit/writer_leaflet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/join.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="yaml_inputter_code_generator/src/writer_kit/writer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
